@@ -49,16 +49,14 @@ Para el desarrollo del programa se utilizaron ciclos `while` para verificar que 
 def imprimir_matriz(mat):
   for i in mat:
     print (i)
-  print("-------------------------")  
+  print("---------------------------------")
 def generar_matriz(filas : int, columnas : int) -> list:
   fil : list = []
   matriz : list = []
   num_dato : int = 1
-  fila = filas
-  columna = columnas
-  for i in range (fila):
-    for j in range (columna):
-      fil.append(int(input(f"ingrese el dato {num_dato} de la primera matriz:  ")))
+  for i in range (filas):
+    for j in range (columnas):
+      fil.append(int(input(f"ingrese el dato {num_dato} que va en la posición {i + 1, j + 1} de la matriz:  ")))
       num_dato += 1
     matriz.append(fil)
     fil = []
@@ -123,16 +121,14 @@ Al igual que en el ejercicio anterior se verifica con los ciclos `while` que los
 def imprimir_matriz(mat):
   for i in mat:
     print (i)
-  print("-------------------------")  
+  print("---------------------------------")
 def generar_matriz(filas : int, columnas : int) -> list:
   fil : list = []
   matriz : list = []
   num_dato : int = 1
-  fila = filas
-  columna = columnas
-  for i in range (fila):
-    for j in range (columna):
-      fil.append(int(input(f"ingrese el dato {num_dato} de la primera matriz:  ")))
+  for i in range (filas):
+    for j in range (columnas):
+      fil.append(int(input(f"ingrese el dato {num_dato} que va en la posición {i + 1, j + 1} de la matriz:  ")))
       num_dato += 1
     matriz.append(fil)
     fil = []
@@ -195,19 +191,18 @@ Mediante un bucle `while` se verifica que no hayan valores con los que no se pue
 def imprimir_matriz(mat):
   for i in mat:
     print (i)
-  print("-------------------------")  
+  print("---------------------------------")
 def generar_matriz(filas : int, columnas : int) -> list:
-  fil = []
-  matriz = []
+  fil : list = []
+  matriz : list = []
   num_dato : int = 1
-  fila = filas
-  columna = columnas
-  for i in range (fila):
-    for j in range (columna):
-      fil.append(int(input(f"ingrese el dato {num_dato} de la primera matriz")))
+  for i in range (filas):
+    for j in range (columnas):
+      fil.append(int(input(f"ingrese el dato {num_dato} que va en la posición {i + 1, j + 1} de la matriz:  ")))
       num_dato += 1
     matriz.append(fil)
     fil = []
+  print("")
   return matriz
 """
 Se defina la función transpuesta, donde intercambia de posición las filas y columnas de una matriz ingresada
@@ -249,19 +244,18 @@ Se utliza el mismo algoritmo de bucles `for` anidados para acceder a los element
 def imprimir_matriz(mat):
   for i in mat:
     print (i)
-  print("-------------------------")  
+  print("---------------------------------")
 def generar_matriz(filas : int, columnas : int) -> list:
-  fil = []
-  matriz = []
+  fil : list = []
+  matriz : list = []
   num_dato : int = 1
-  fila = filas
-  columna = columnas
-  for i in range (fila):
-    for j in range (columna):
-      fil.append(int(input(f"ingrese el dato {num_dato} de la primera matriz")))
+  for i in range (filas):
+    for j in range (columnas):
+      fil.append(int(input(f"ingrese el dato {num_dato} que va en la posición {i + 1, j + 1} de la matriz:  ")))
       num_dato += 1
     matriz.append(fil)
     fil = []
+  print("")
   return matriz
 """
 Se defina la función de "suma_columna" donde accede a la columna ingresada por el usuario y suma todos los elementos en esta
@@ -306,19 +300,18 @@ al igual que el anterior, utliza el mismo algoritmo, sin embargo, en este caso a
 def imprimir_matriz(mat):
   for i in mat:
     print (i)
-  print("-------------------------")  
+  print("---------------------------------")
 def generar_matriz(filas : int, columnas : int) -> list:
-  fil = []
-  matriz = []
+  fil : list = []
+  matriz : list = []
   num_dato : int = 1
-  fila = filas
-  columna = columnas
-  for i in range (fila):
-    for j in range (columna):
-      fil.append(int(input(f"ingrese el dato {num_dato} de la primera matriz")))
+  for i in range (filas):
+    for j in range (columnas):
+      fil.append(int(input(f"ingrese el dato {num_dato} que va en la posición {i + 1, j + 1} de la matriz:  ")))
       num_dato += 1
     matriz.append(fil)
     fil = []
+  print("")
   return matriz
 """
 se define la función "suma_fila" donde se accede a la fila ingresada por el usuario y suma todos los elementos de esta
